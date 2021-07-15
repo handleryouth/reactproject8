@@ -1,10 +1,20 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {Link} from "react-router-dom";
 import styles from "./Footer.module.css"
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Footer() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+    AOS.refresh();
+  });
+
+
   return (
-    <div className={styles.footer}>
+    <div data-aos="fade-up" className={styles.footer}>
       <div className={styles.talkabout}>
         <div>
           <h1>Let’s talk about your project</h1>

@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Style from "./Locations.module.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Location(props) {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+    AOS.refresh();
+  });
+
+  
   const reverse = {
     flexDirection: "row-reverse",
   };
@@ -12,6 +22,7 @@ export default function Location(props) {
 
   return (
     <div
+      data-aos="fade-up"
       style={props.title === "AUSTRALIA" ? reverse : null}
       className={Style.location}
     >

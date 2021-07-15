@@ -1,7 +1,7 @@
 import React from "react";
 import FlexContainer from "./FlexContainer";
 import Place from "./Place";
-import Styles from "./About.module.css"
+import Styles from "./About.module.css";
 
 export default function About() {
   return (

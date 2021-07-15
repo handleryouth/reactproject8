@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Projects from "./Projects";
 import Objective from "./Objective";
 import Styles from "./Home.module.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+    AOS.refresh();
+  });
+
   return (
     <div>
-      <div className={Styles.container}>
+      <div data-aos="fade-up" className={Styles.container}>
         <div>
           <h1>Award-winning custom designs and digital branding solutions</h1>
           <p>
@@ -25,7 +34,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={Styles.projectcontainer}>
+      <div data-aos="fade-up" className={Styles.projectcontainer}>
         <Projects
           class="web"
           title="WEB DESIGN"
@@ -44,7 +53,7 @@ export default function Home() {
         />
       </div>
 
-      <div className={Styles.objective}>
+      <div data-aos="fade-in" className={Styles.objective}>
         <Objective
           image="/images/home/desktop/illustration-passionate.svg"
           title="PASSIONATE"

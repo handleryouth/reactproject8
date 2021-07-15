@@ -1,7 +1,9 @@
-import React from "react";
+import React  from "react";
 import Location from "./Location";
 
 export default function Locations() {
+
+
   return (
     <div>
       <Location
