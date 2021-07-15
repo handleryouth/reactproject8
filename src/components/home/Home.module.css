@@ -1,0 +1,123 @@
+.container {
+  width: 70%;
+  margin: 2vw auto 0 auto;
+  display: flex;
+  align-items: center;
+  background-color: #e7816b;
+  color: white;
+  padding: 2vw 3vw;
+  border-radius: 5px;
+  height: 35vw;
+  overflow: hidden;
+}
+
+.container img {
+  width: 44vw;
+  position: absolute;
+  right: -6vw;
+  top: -20vw;
+}
+
+.container button {
+  font-size: 1.3vw;
+  cursor: pointer;
+  width: 12vw;
+  height: 4.5vw;
+  border-radius: 5px;
+  background-color: white;
+  border: none;
+}
+
+.container h1 {
+  font-size: 3vw;
+  width: 55%;
+}
+
+.container p {
+  font-size: 1.3vw;
+  width: 50%;
+}
+
+.imagecontainer {
+  position: relative;
+}
+
+/* PROJECT CONTAINER */
+
+.projectcontainer {
+  width: 60%;
+  margin: 10vw auto 7vw auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 18vw);
+  column-gap: 1vw;
+  row-gap: 1vw;
+  height: 40vw;
+}
+
+.viewcontainer {
+  display: flex;
+  align-items: center;
+}
+
+.viewcontainer img {
+  margin-left: 0.5vw;
+  width: 0.5vw;
+}
+
+.web,
+.graphic,
+.app {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+  color: white;
+  font-size: 1vw;
+  cursor: pointer;
+  position: relative;
+}
+
+.web::before,
+.graphic::before,
+.app::before {
+  content: " ";
+  position: absolute;
+  width: 0%;
+  background-color: #e7816b;
+  transition: width 0.3s ease;
+  background-blend-mode: screen;
+  height: 100%;
+  left: 0vw;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.web:hover::before,
+.graphic:hover::before,
+.app:hover::before {
+  width: 100%;
+}
+
+.web {
+  grid-row: 1/ 3;
+}
+
+.graphic {
+  grid-row: 1/ 2;
+}
+
+.app {
+  grid-row: 2/ 3;
+}
+
+/* for objective */
+
+.objective {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+

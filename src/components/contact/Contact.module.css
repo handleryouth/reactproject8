@@ -1,0 +1,53 @@
+.place {
+  display: flex;
+  width: 80%;
+  margin: 5vw auto 10vw auto;
+  justify-content: center;
+}
+
+.formcontainer {
+  display: flex;
+  width: 65%;
+  margin: 2vw auto 5vw auto;
+  align-items: center;
+  background-color: #e7816b;
+  padding: 5vw;
+  border-radius: 10px;
+}
+
+.buttoncontainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.forms button {
+  width: 9vw;
+  height: 3.5vw;
+  cursor: pointer;
+  font-size: 1.3vw;
+}
+
+.contactdescription{
+    font-size: 1.3vw;
+}
+
+.contactdescription p {
+  width: 80%;
+}
+
+.formlist {
+  display: flex;
+  flex-direction: column;
+}
+
+.formlist input[type="text"] {
+  margin-bottom: 1.5vw;
+  height: 3vw;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid gray;
+  font-size: 1.8vw;
+  background-color:transparent;
+  width:25vw;
+}
