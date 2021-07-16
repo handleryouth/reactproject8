@@ -5,11 +5,11 @@
   width: 80%;
   padding: 2vw;
   margin: 0 auto;
-  font-size: 1.2vw;
+  font-size: 1.5vw;
 }
 
 .navbar img {
-  width: 14vw;
+  width: 20vw;
 }
 
 .link a {
@@ -31,4 +31,18 @@
 
 .link a:hover::before {
   width: 100%;
+}
+
+@media all and (max-width: 768px) {
+  .navbar {
+    font-size: 2.3vw;
+  }
+
+  .navbar img {
+    width: 27vw;
+  }
+
+  .link a::before {
+    top: 2.3vw;
+  }
 }

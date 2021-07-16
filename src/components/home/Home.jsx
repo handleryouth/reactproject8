@@ -9,6 +9,7 @@ export default function Home() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
+      once: true,
     });
     AOS.refresh();
   });
@@ -16,7 +17,7 @@ export default function Home() {
   return (
     <div>
       <div data-aos="fade-up" className={Styles.container}>
-        <div>
+        <div className={Styles.descriptioncontainer}>
           <h1>Award-winning custom designs and digital branding solutions</h1>
           <p>
             With over 10 years in the industry, we are experienced in creating

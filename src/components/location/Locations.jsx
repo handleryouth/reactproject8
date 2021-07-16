@@ -1,11 +1,12 @@
 import React  from "react";
 import Location from "./Location";
+import Style from "./Locations.module.css"
 
 export default function Locations() {
 
 
   return (
-    <div>
+    <div className={Style.locationlist}>
       <Location
         image="/images/locations/desktop/image-map-canada.png"
         title="CANADA"

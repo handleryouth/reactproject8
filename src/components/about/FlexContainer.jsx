@@ -7,6 +7,7 @@ export default function FlexContainer(props) {
   useEffect(() => {
     AOS.init({
       duration: 1000,
+      once: true,
     });
     AOS.refresh();
   });

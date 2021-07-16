@@ -20,11 +20,11 @@
   border-radius: 5px;
   color: white;
   left: 15vw;
-  bottom: 19vw;
+  bottom: 23vw;
 }
 
 .talkabout h1 {
-  font-size: 3vw;
+  font-size: 3.8vw;
   width: 70%;
   margin-bottom: 1vw;
   position: relative;
@@ -32,8 +32,8 @@
 }
 
 .talkabout p {
-  width: 60%;
-  font-size: 1.2vw;
+  width: 80%;
+  font-size: 1.6vw;
   margin-top: 0;
   position: relative;
   z-index: 1;
@@ -41,7 +41,7 @@
 
 .talkabout button {
   cursor: pointer;
-  width: 10vw;
+  width: 15vw;
   height: 4vw;
   position: relative;
   z-index: 1;
@@ -100,8 +100,8 @@
   justify-content: space-between;
   align-items: center;
   width: 70%;
-  margin: 2vw auto;
-  font-size: 1vw;
+  margin: 1.5vw auto;
+  font-size: 1.5vw;
   border-bottom: 2px solid black;
   padding-bottom: 1.5vw;
 }
@@ -137,12 +137,17 @@
   justify-content: space-between;
   width: 70%;
   margin: 0 auto;
-  font-size: 1.2vw;
+  font-size: 1.5vw;
+  align-items: flex-end;
+}
+
+.address p {
+  margin-bottom: 0;
 }
 
 .socialicon img {
   margin: 0 0.5vw;
-  width: 1.8vw;
+  width: 2.8vw;
   transition: background-color 0.2s ease;
   cursor: pointer;
 }
@@ -218,5 +223,60 @@
     transform: scale(1);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .footer {
+    margin-top: 27vw;
+  }
+
+  .talkabout {
+    flex-direction: column;
+    justify-content: center;
+    height: 42vw;
+    width: 60%;
+    left: 15vw;
+    bottom: 25vw;
+  }
+
+  .talkabout h1 {
+    font-size: 5vw;
+    width: 100%;
+    text-align: center;
+  }
+
+  .talkabout p {
+    width: 85%;
+    font-size: 3vw;
+    text-align: center;
+    margin: 1.5vw auto;
+  }
+
+  .footerlink {
+    font-size: 1.7vw;
+  }
+
+  .linklist a::before {
+    top: 2.4vw;
+  }
+  .talkabout button {
+    width: 20vw;
+    height: 7vw;
+    font-size: 2vw;
+    margin: 1vw 0;
+  }
+
+  .address {
+    font-size: 1.9vw;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .talkabout button {
+    margin: 1vw 0;
+    width: 18vw;
+    height: 6vw;
+    font-size: 1.7vw;
   }
 }

@@ -21,23 +21,31 @@
 }
 
 .forms button {
-  width: 9vw;
-  height: 3.5vw;
+  width: 13vw;
+  height: 4.5vw;
   cursor: pointer;
-  font-size: 1.3vw;
+  font-size: 2vw;
 }
 
-.contactdescription{
-    font-size: 1.3vw;
+.contactdescription {
+  font-size: 1.6vw;
 }
 
 .contactdescription p {
-  width: 80%;
+  width: 90%;
 }
 
 .formlist {
   display: flex;
   flex-direction: column;
+}
+
+.formlist input[type="text"],
+textarea {
+  width: 25vw;
+  font-size: 1.8vw;
+  background-color: transparent;
+  color: white;
 }
 
 .formlist input[type="text"] {
@@ -47,7 +55,73 @@
   border-left: 0;
   border-right: 0;
   border-bottom: 1px solid gray;
-  font-size: 1.8vw;
-  background-color:transparent;
-  width:25vw;
+}
+
+.messageinput {
+  height: 5vw !important;
+}
+
+textarea {
+  resize: none;
+  border: 1px solid white;
+  height: 10vw;
+  margin-bottom: 3vw;
+}
+
+@media all and (max-width: 768px) {
+  .contactcontainer{
+    margin-bottom: 50vw;
+  }
+
+  .formcontainer {
+    flex-direction: column;
+  }
+
+  .contactdescription {
+    font-size: 3vw;
+  }
+
+  .contactdescription h1{
+    font-size: 7vw;
+    margin-bottom: 2vw;
+  }
+
+  .contactdescription p {
+    width: 100%;
+    font-size: 4vw;
+  }
+
+  .forms {
+    width: 100%;
+  }
+
+  .formlist input[type="text"], textarea {
+    width: 100%;
+    font-size: 3vw;
+    margin: 3vw 0;
+    
+  }
+
+  .formlist input[type="text"]{
+    height: 4.5vw;
+  }
+
+  textarea{
+    height: 10vw;
+    border: none;
+    border-bottom: 1px solid white;
+  }
+
+  .forms button {
+    width: 24vw;
+    height: 8vw;
+    font-size: 2.8vw;
+  }
+}
+
+
+@media all and (max-width: 400px){
+  .place{
+    flex-direction: column;
+  }
 }

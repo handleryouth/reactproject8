@@ -7,6 +7,7 @@ export default function Location(props) {
   useEffect(() => {
     AOS.init({
       duration: 1000,
+      once: true,
     });
     AOS.refresh();
   });

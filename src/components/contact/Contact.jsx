@@ -1,11 +1,23 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Place from "../about/Place";
 import Style from "./Contact.module.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Contact() {
+
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+    AOS.refresh();
+  });
+
   return (
-    <div>
-      <div className={Style.formcontainer}>
+    <div className={Style.contactcontainer}>
+      <div data-aos="fade-up" className={Style.formcontainer}>
         <div className={Style.contactdescription}>
           <h1>Contact Us</h1>
           <p>
@@ -18,10 +30,10 @@ export default function Contact() {
 
         <div className={Style.forms}>
           <div className={Style.formlist}>
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Email Address"/>
+            <input type="text" placeholder="Phone" />
+            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
           </div>
 
           <div className={Style.buttoncontainer}>

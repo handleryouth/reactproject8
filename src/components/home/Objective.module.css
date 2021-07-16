@@ -29,3 +29,37 @@
 .objectivecontainer p {
   font-size: 1.2vw;
 }
+
+@media all and (max-width: 768px) {
+  .objectivecontainer {
+    display: flex;
+    align-items: center;
+    margin: 1vw 0;
+  }
+
+  .objectivecontainer h3 {
+    font-size: 2vw;
+  }
+
+  .objectivecontainer p {
+    font-size: 1.8vw;
+  }
+
+  .objectivecontainer img {
+    width: 16vw;
+    margin-right: 2vw;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .objectivecontainer h3 {
+    font-size: 2.7vw;
+  }
+
+  .objectivecontainer p {
+    font-size: 2.2vw;
+  }
+  .objectivecontainer img {
+    width:20vw;
+  }
+}

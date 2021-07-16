@@ -5,7 +5,7 @@ export default function Objective(props) {
     return (
         <div className={Styles.objectivecontainer}>
             <img src={props.image} alt="illustration" />
-            <div>
+            <div className={Styles.titledescription}>
                 <h3>{props.title}</h3>
                 <p>{props.description}</p>
             </div>
