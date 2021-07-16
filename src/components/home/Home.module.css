@@ -124,7 +124,7 @@
 @media all and (max-width: 768px) {
   .container {
     flex-direction: column;
-    height: 80vw;
+    height: 100vw;
   }
 
   .descriptioncontainer {
@@ -132,13 +132,13 @@
   }
 
   .container h1 {
-    font-size: 5vw;
+    font-size: 6vw;
     width: 90%;
     margin: 1vw auto;
   }
 
   .container p {
-    font-size: 2.5vw;
+    font-size: 3.3vw;
     width: 85%;
     margin: 2vw auto;
   }
@@ -196,7 +196,7 @@
   .objective {
     flex-direction: column;
     text-align: left;
-    width: 70%;
+    width: 75%;
     margin-bottom: 51vw;
   }
 }
