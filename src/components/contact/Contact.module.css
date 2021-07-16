@@ -21,10 +21,13 @@
 }
 
 .forms button {
-  width: 13vw;
-  height: 4.5vw;
+  width: 15vw;
+  height: 5vw;
   cursor: pointer;
-  font-size: 2vw;
+  font-size: 1.9vw;
+  color: black;
+  border: none;
+  border-radius: 5px;
 }
 
 .contactdescription {
@@ -54,7 +57,7 @@ textarea {
   border-top: 0;
   border-left: 0;
   border-right: 0;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid white;
 }
 
 .messageinput {
@@ -63,13 +66,14 @@ textarea {
 
 textarea {
   resize: none;
-  border: 1px solid white;
+  border: none;
+  border-bottom: 1px solid white;
   height: 10vw;
   margin-bottom: 3vw;
 }
 
 @media all and (max-width: 768px) {
-  .contactcontainer{
+  .contactcontainer {
     margin-bottom: 50vw;
   }
 
@@ -81,7 +85,7 @@ textarea {
     font-size: 3vw;
   }
 
-  .contactdescription h1{
+  .contactdescription h1 {
     font-size: 7vw;
     margin-bottom: 2vw;
   }
@@ -95,19 +99,19 @@ textarea {
     width: 100%;
   }
 
-  .formlist input[type="text"], textarea {
+  .formlist input[type="text"],
+  textarea {
     width: 100%;
-    font-size: 3vw;
+    font-size: 4vw;
     margin: 3vw 0;
-    
   }
 
-  .formlist input[type="text"]{
-    height: 4.5vw;
+  .formlist input[type="text"] {
+    height: 11vw;
   }
 
-  textarea{
-    height: 10vw;
+  textarea {
+    height: 20vw;
     border: none;
     border-bottom: 1px solid white;
   }
@@ -116,12 +120,21 @@ textarea {
     width: 24vw;
     height: 8vw;
     font-size: 2.8vw;
+    background-color: white;
+  }
+
+  .place {
+    margin: 8vw auto 62vw auto;
   }
 }
 
-
-@media all and (max-width: 400px){
-  .place{
+@media all and (max-width: 400px) {
+  .place {
     flex-direction: column;
+  }
+
+  .forms button {
+    width: 27vw;
+    height: 9vw;
   }
 }

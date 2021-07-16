@@ -101,13 +101,13 @@
   align-items: center;
   width: 70%;
   margin: 1.5vw auto;
-  font-size: 1.5vw;
+  font-size: 1.6vw;
   border-bottom: 2px solid black;
   padding-bottom: 1.5vw;
 }
 
 .footerlink img {
-  width: 18vw;
+  width: 20vw;
 }
 
 .linklist a {
@@ -237,7 +237,7 @@
     height: 42vw;
     width: 60%;
     left: 15vw;
-    bottom: 25vw;
+    bottom: 28vw;
   }
 
   .talkabout h1 {
@@ -253,30 +253,25 @@
     margin: 1.5vw auto;
   }
 
+  .footerlink img {
+    width: 23vw;
+  }
+
   .footerlink {
-    font-size: 1.7vw;
+    font-size: 1.9vw;
   }
 
   .linklist a::before {
     top: 2.4vw;
   }
   .talkabout button {
-    width: 20vw;
-    height: 7vw;
+    width: 24vw;
+    height: 8vw;
     font-size: 2vw;
     margin: 1vw 0;
   }
 
   .address {
     font-size: 1.9vw;
-  }
-}
-
-@media all and (max-width: 400px) {
-  .talkabout button {
-    margin: 1vw 0;
-    width: 18vw;
-    height: 6vw;
-    font-size: 1.7vw;
   }
 }
