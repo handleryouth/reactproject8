@@ -122,9 +122,9 @@
   position: absolute;
   height: 2px;
   width: 0;
-  background-color: blue;
+  background-color: white;
   transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-  top: 1.5vw;
+  top: 2.1vw;
 }
 
 .linklist a:hover::before {
@@ -258,11 +258,11 @@
   }
 
   .footerlink {
-    font-size: 1.9vw;
+    font-size: 2.1vw;
   }
 
   .linklist a::before {
-    top: 2.4vw;
+    top: 3vw;
   }
   .talkabout button {
     width: 24vw;

@@ -12,25 +12,18 @@ export default function Location(props) {
     AOS.refresh();
   });
 
-  
-  const reverse = {
-    flexDirection: "row-reverse",
-  };
-
-  const rightmargin = {
-    marginRight: "5vw",
-  };
-
   return (
     <div
       data-aos="fade-up"
-      style={props.title === "AUSTRALIA" ? reverse : null}
-      className={Style.location}
+      className={`${Style.location} ${
+        props.title === "AUSTRALIA" ? Style.australia : ""
+      }`}
     >
       <img src={props.image} alt="Illustration" />
       <div
-        style={props.title === "AUSTRALIA" ? rightmargin : null}
-        className={Style.description}
+        className={`${Style.description} ${
+          props.title === "AUSTRALIA" ? Style.australiadescription : null
+        }`}
       >
         <h2>{props.title}</h2>
 

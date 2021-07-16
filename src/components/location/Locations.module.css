@@ -10,6 +10,14 @@
   justify-content: space-between;
 }
 
+.australia {
+  flex-direction: row-reverse;
+}
+
+.australiadescription {
+  margin-right: 5vw;
+}
+
 .location img {
   border-radius: 10px;
   width: 27vw;
@@ -40,11 +48,15 @@
   .locationlist {
     margin-bottom: 57vw;
   }
-  
+
   .location {
     flex-direction: column !important;
     overflow: hidden;
     border-radius: 10px;
+  }
+
+  .australiadescription{
+    margin: 0;
   }
 
   .location img {
@@ -57,7 +69,7 @@
     width: 85%;
     flex-basis: auto;
     height: auto;
-    border-radius:unset;
+    border-radius: unset;
   }
   .description {
     font-size: 2.9vw;

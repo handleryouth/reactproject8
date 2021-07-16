@@ -132,22 +132,22 @@
   }
 
   .container h1 {
-    font-size: 4.5vw;
-    width: 80%;
+    font-size: 5vw;
+    width: 90%;
     margin: 1vw auto;
   }
 
   .container p {
-    font-size: 2vw;
-    width: 70%;
+    font-size: 2.5vw;
+    width: 85%;
     margin: 2vw auto;
   }
 
   .container button {
-    width: 17vw;
-    height: 5.5vw;
+    width: 24vw;
+    height: 6.5vw;
     margin: 2vw 0;
-    font-size: 1.8vw;
+    font-size: 2.4vw;
   }
 
   .container img {
@@ -165,10 +165,11 @@
     width: 70%;
   }
 
-  .web,
-  .graphic,
-  .app {
-    font-size: 2vw;
+  .web h4,
+  .graphic h4,
+  .app h4 {
+    font-size: 2.5vw;
+    margin-top: 1vw;
   }
 
   .web {
@@ -187,6 +188,7 @@
   .graphic h2,
   .app h2 {
     margin-bottom: 0;
+    font-size: 3.8vw;
   }
 
   /* for objective */
@@ -197,7 +199,6 @@
     width: 70%;
     margin-bottom: 51vw;
   }
-
 }
 
 @media all and (max-width: 400px) {
