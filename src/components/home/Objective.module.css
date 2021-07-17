@@ -30,6 +30,30 @@
   font-size: 1.2vw;
 }
 
+@media all and (min-width: 1440px) {
+  .objectivecontainer {
+    margin: 0 1rem;
+  }
+
+  .objectivecontainer::before{
+    height: 13rem;
+    width: 13rem;
+  }
+
+  .objectivecontainer img {
+    width: 13rem;
+  }
+
+  .objectivecontainer h3 {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+
+  .objectivecontainer p {
+    font-size: 1.6rem;
+  }
+}
+
 @media all and (max-width: 768px) {
   .objectivecontainer {
     display: flex;
@@ -38,11 +62,11 @@
   }
 
   .objectivecontainer h3 {
-    font-size: 3.8vw;
+    font-size: 4vw;
   }
 
   .objectivecontainer p {
-    font-size: 2.5vw;
+    font-size: 3vw;
     width: 100%;
   }
 

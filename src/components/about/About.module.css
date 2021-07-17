@@ -5,7 +5,7 @@
 .leftwhite {
   overflow: hidden;
   border-radius: 5px;
-  font-size: 1.6vw;
+  font-size: 1.7vw;
 }
 
 .rightwhite,
@@ -30,7 +30,7 @@
 
 .rightorange p,
 .rightwhite p {
-  width: 70%;
+  width: 85%;
 }
 
 .leftwhite p {
@@ -53,7 +53,7 @@
 }
 
 .leftwhite {
-  width: 80%;
+  width: 85%;
   display: flex;
   margin: 0 auto;
   align-items: center;
@@ -98,6 +98,63 @@
 
 .nation button:hover {
   opacity: 0.8;
+}
+
+@media all and (min-width: 1440px) {
+  .rightorange,
+  .rightwhite,
+  .leftwhite {
+    width: 76.5rem;
+    font-size: 1.7rem;
+  }
+
+  .rightorange,
+  .rightwhite {
+    margin: 5rem auto;
+  }
+
+  .rightorange .description,
+  .rightwhite .description,
+  .leftwhite .description {
+    padding-left: 2rem;
+  }
+
+  .rightorange img,
+  .rightwhite img {
+    width: 26rem;
+  }
+
+  .leftwhite img {
+    width: 28rem;
+    height: 42rem;
+  }
+
+  .leftwhite .description {
+    margin-left: 2rem;
+  }
+
+  .placecontainer {
+    width: unset;
+    margin: 5rem 0;
+  }
+
+  .nation {
+    margin: 0 2rem;
+  }
+
+  .nation img {
+    width: 20rem;
+  }
+
+  .nation h3 {
+    font-size: 1.8rem;
+  }
+
+  .nation button {
+    width: 14rem;
+    height: 5rem;
+    font-size: 1.7rem;
+  }
 }
 
 @media all and (max-width: 768px) {
@@ -151,7 +208,7 @@
   }
 
   .nation h3 {
-    font-size: 2.8vw;
+    font-size: clamp(1.6rem, 2.8vw, 3rem);
   }
 
   .nation button {
@@ -164,6 +221,12 @@
 @media all and (max-width: 400px) {
   .placecontainer {
     flex-direction: column;
+  }
+
+  .rightorange img,
+  .rightwhite img,
+  .leftwhite img {
+    height: unset;
   }
 
   .nation img {

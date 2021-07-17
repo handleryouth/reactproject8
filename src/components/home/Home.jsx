@@ -15,7 +15,7 @@ export default function Home() {
   });
 
   return (
-    <div>
+    <div className={Styles.homecontainer}>
       <div data-aos="fade-up" className={Styles.container}>
         <div className={Styles.descriptioncontainer}>
           <h1>Award-winning custom designs and digital branding solutions</h1>

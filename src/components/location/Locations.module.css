@@ -4,8 +4,8 @@
 }
 
 .location {
-  width: 80%;
-  margin: 2vw auto 5vw auto;
+  width: 85%;
+  margin: 5vw auto 5vw auto;
   align-items: center;
   justify-content: space-between;
 }
@@ -44,6 +44,27 @@
   margin-right: 3vw;
 }
 
+@media all and (min-width: 1440px) {
+  .location {
+    width: 72rem;
+    margin: 3rem auto 5rem auto;
+  }
+
+  .location img {
+    width: 24.5rem;
+  }
+  .description {
+    height: 22rem;
+    font-size: 1.3rem;
+    padding-left: 5rem;
+    width: 55rem;
+  }
+
+  .australiadescription {
+    margin-right: 5rem;
+  }
+}
+
 @media all and (max-width: 768px) {
   .locationlist {
     margin-bottom: 57vw;
@@ -55,7 +76,7 @@
     border-radius: 10px;
   }
 
-  .australiadescription{
+  .australiadescription {
     margin: 0;
   }
 
@@ -72,7 +93,7 @@
     border-radius: unset;
   }
   .description {
-    font-size: 2.9vw;
+    font-size: 3.1vw;
   }
 
   .description h2 {

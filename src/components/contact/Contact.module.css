@@ -7,12 +7,13 @@
 
 .formcontainer {
   display: flex;
-  width: 65%;
+  width: 75%;
   margin: 2vw auto 5vw auto;
   align-items: center;
   background-color: #e7816b;
-  padding: 5vw;
+  padding: 4vw;
   border-radius: 10px;
+  color: #fff;
 }
 
 .buttoncontainer {
@@ -72,6 +73,27 @@ textarea {
   margin-bottom: 3vw;
 }
 
+@media all and (min-width: 1440px) {
+  .formcontainer {
+    width: 67rem;
+  }
+
+  .contactdescription {
+    font-size: 1.7rem;
+  }
+
+  .formlist input[type="text"] {
+    margin-bottom: 1.5rem;
+    height: 3rem;
+  }
+
+  .forms button {
+    width: 13rem;
+    height: 4rem;
+    font-size: 1.9rem;
+  }
+}
+
 @media all and (max-width: 768px) {
   .contactcontainer {
     margin-bottom: 50vw;
@@ -125,14 +147,11 @@ textarea {
 
   .place {
     margin: 8vw auto 62vw auto;
+    flex-direction: column;
   }
 }
 
 @media all and (max-width: 400px) {
-  .place {
-    flex-direction: column;
-  }
-
   .forms button {
     width: 27vw;
     height: 9vw;
